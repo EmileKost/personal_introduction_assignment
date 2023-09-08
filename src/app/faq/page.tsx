@@ -9,7 +9,7 @@ import { Menu } from '@/components/Menu';
 
 const Faq = () => {
 
-    const [ctaText, setCtaText] = useState(window.innerWidth < 670 ? 'Leave you alone' : 'Stop bothering my co-workers');
+    const [ctaText, setCtaText] = useState('Stop bothering my co-workers');
 
     useEffect(() => {
         function getCorrectContent() {
