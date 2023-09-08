@@ -33,8 +33,8 @@ function Home() {
     fontFamily: 'body'
   }
 
-  const [textContent, setTextContent] = useState(window.innerWidth < 670 ? 'Breaking the code once' : 'Probably going to ruin your code once');
-  const [musicTextContent, setMusicTextContent] = useState(window.innerWidth < 670 ? 'Love for music' : 'Love for music and festivals');
+  const [textContent, setTextContent] = useState('Probably breaking the code once woops');
+  const [musicTextContent, setMusicTextContent] = useState('Love for music and festivals');
 
   useEffect(() => {
     function getGoodContentOnResize() {
