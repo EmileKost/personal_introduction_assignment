@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Menu } from '@/components/Menu';
 
-const faq = () => {
+const Faq = () => {
 
     const [ctaText, setCtaText] = useState(window.innerWidth < 670 ? 'Leave you alone' : 'Stop bothering my co-workers');
 
@@ -36,7 +36,6 @@ const faq = () => {
     const getSecondSpanInSightAnimation = `${getSpanInSightKeyframes} .3s .4s ease-out 1 forwards`;
     const getThirdSpanInSightAnimation = `${getSpanInSightKeyframes} .3s .6s ease-out 1 forwards`;
 
-    console.log(window.location.href)
 
     return(
         <Flex 
@@ -154,5 +153,5 @@ const faq = () => {
     )
 }
 
-export default faq;
+export default Faq;
 

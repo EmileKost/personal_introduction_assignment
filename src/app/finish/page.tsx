@@ -5,7 +5,7 @@ import { Box, Flex, Text, Heading, keyframes, Link } from '@chakra-ui/react';
 import { Accordion, AccordionItem, AccordionButton, AccordionPanel } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
-const finish = () => {
+const Finish = () => {
 
     const styles = {
         colorBlue: '#0019FF',
@@ -33,4 +33,4 @@ const finish = () => {
     )
 }
 
-export default finish;
+export default Finish;

@@ -7,7 +7,7 @@ import Slider from '@/components/Slider';
 import { Menu } from '@/components/Menu';
 
 
-const hobbies = () => {
+const Hobbies = () => {
 
     const firstSliderUrls = [
         'slideshowImages/slide1.jpeg',
@@ -46,4 +46,4 @@ const hobbies = () => {
     )
 }
 
-export default hobbies;
+export default Hobbies;
