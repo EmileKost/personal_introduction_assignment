@@ -32,14 +32,14 @@ const firstSlideAnimation = `${firstSlideShowKeyFrames} 30s ${props.delay}s infi
                     {images.map((image: any) => {
                         return(
                             <Flex key={String(image)} as='div' justify='center' align='center' sx={itemStyles}>
-                            <Image src={images[0]} w='100%' h='auto' objectFit='cover'/>
+                            <Image src={image} w='100%' h='auto' objectFit='cover'/>
                         </Flex>
                         )
                     })}
                     {images.map((image: any) => {
                         return(
                             <Flex key={String(image)} as='div' justify='center' align='center' sx={itemStyles}>
-                            <Image src={images[0]} w='100%' h='auto' objectFit='cover'/>
+                            <Image src={image} w='100%' h='auto' objectFit='cover'/>
                         </Flex>
                         )
                     })}

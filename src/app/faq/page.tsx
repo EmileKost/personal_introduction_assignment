@@ -111,7 +111,7 @@ const Faq = () => {
                         </Heading>
                         <AccordionPanel>
                             <Text as='p' fontSize={{base: '20px', md: '25px'}} color={styles.colorWhite} fontFamily='body'>
-                                I tend to do a little dance when solving a diffecult task. 
+                                I tend to do a little dance when solving a difficult task. 
                             </Text>
                         </AccordionPanel>
                     </AccordionItem>
