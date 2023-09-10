@@ -18,6 +18,7 @@ export const Menu = (props: any) => {
             listStyleType='none'
             color={props.color}
             textAlign='right'
+            zIndex={'2'}
         >
             <ListItem>
                 <Link  _hover={{opacity: '.5', transition: '.5s', textDecoration: 'none'}} href='/'>Home</Link>

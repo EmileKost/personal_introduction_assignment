@@ -9,11 +9,25 @@ import { Menu } from '@/components/Menu';
 
 const Hobbies = () => {
 
-    const firstSliderUrls = [
-        'slideshowImages/slide1.jpeg',
-        'slideshowImages/slide2.jpeg',
-        'slideshowImages/slide3.jpeg',
-        'slideshowImages/slide4.jpeg'
+    const firstSliderImages = [
+        'slideshowImages/gf1.PNG',
+        'slideshowImages/gf2.PNG',
+        'slideshowImages/gf3.PNG',
+        'slideshowImages/gf4.PNG'
+    ]
+
+    const secondSliderImages = [
+        'slideshowImages/friends1.PNG',
+        'slideshowImages/friends2.PNG',
+        'slideshowImages/friends3.PNG',
+        'slideshowImages/friends4.PNG'
+    ]
+
+    const thirdSliderImages = [
+        'slideshowImages/crazy1.PNG',
+        'slideshowImages/crazy2.PNG',
+        'slideshowImages/crazy3.PNG',
+        'slideshowImages/crazy4.PNG'
     ]
 
     const styles = {
@@ -25,7 +39,7 @@ const Hobbies = () => {
     const itemStyles = {
         backgroundColor: '#D9D9D9',
         minWidth: '25%',
-        height: '250px',
+        height: '220px',
         overflow: 'hidden',
     }
 
@@ -36,9 +50,9 @@ const Hobbies = () => {
             </Heading>
             <Menu color={styles.colorBlue}/>
             {/* Sliders: */}
-            <Slider images={firstSliderUrls} direction={'left'} delay={0}/>
-            <Slider images={firstSliderUrls} direction={'right'} delay={1}/>
-            <Slider images={firstSliderUrls} direction={'left'} delay={.3}/>
+            <Slider images={firstSliderImages} direction={'left'} delay={0}/>
+            <Slider images={secondSliderImages} direction={'right'} delay={1}/>
+            <Slider images={thirdSliderImages} direction={'left'} delay={.3}/>
             <Heading as='h1' fontSize={{base: '30px', md: '55px'}}  px='20px' py='10px' bg={styles.colorBlue} color={styles.colorWhite} position='absolute' bottom='0px' right='0px'>
                 IN MY FREE TIME
             </Heading>

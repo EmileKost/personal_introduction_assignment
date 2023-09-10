@@ -9,18 +9,18 @@ const VacationSlider = (props: any) => {
     // At zero precent, choose between starting point 0 or 100%
     const firstSlideShowKeyFrames = keyframes`
     0% {
-        transform: translateX(${props.direction === 'left' ? '0%' : '-100%'})
+        transform: translateX(${props.direction === 'left' ? '0%' : '-200%'})
     }
     100% {
-        transform: translateX(${props.direction === 'left' ? '-100%' : '0%'})
+        transform: translateX(${props.direction === 'left' ? '-200%' : '0%'})
     }
     `
 
-const firstSlideAnimation = `${firstSlideShowKeyFrames} 20s ${props.delay}s infinite linear`
+const firstSlideAnimation = `${firstSlideShowKeyFrames} 30s ${props.delay}s infinite linear`
 
     const itemStyles = {
-        minWidth: '25%',
-        height: '200px',
+        minWidth: '50%',
+        height: '250px',
         overflow: 'hidden',
     }
 
@@ -28,31 +28,21 @@ const firstSlideAnimation = `${firstSlideShowKeyFrames} 20s ${props.delay}s infi
 
     return(
             <Flex w='100%' maxWidth='90vw' overflow='hidden' py='10px' overflowX='scroll'>
-                <Flex as={motion.div} animation={firstSlideAnimation} w='200%'   position='relative'>
-                    <Flex as='div' justify='center' align='center' sx={itemStyles}>
-                        <Image src={images[0]} w='100%' h='auto' objectFit='cover'/>
-                    </Flex>
-                    <Flex as='div' justify='center' align='center' sx={itemStyles}>
-                        <Image src={images[1]} w='100%' h='auto' objectFit='cover'/>
-                    </Flex>
-                    <Flex as='div' justify='center' align='center' sx={itemStyles}>
-                        <Image src={images[2]}w='100%' h='auto' objectFit='cover'/>
-                    </Flex>
-                    <Flex as='div' justify='center' align='center' sx={itemStyles}>
-                        <Image src={images[3]} w='100%' h='auto' objectFit='cover'/>
-                    </Flex>
-                    <Flex as='div' justify='center' align='center' sx={itemStyles}>
-                        <Image src={images[0]} w='100%' h='auto' objectFit='cover'/>
-                    </Flex>
-                    <Flex as='div' justify='center' align='center' sx={itemStyles}>
-                        <Image src={images[1]} w='100%' h='auto' objectFit='cover'/>
-                    </Flex>
-                    <Flex as='div' justify='center' align='center' sx={itemStyles}>
-                        <Image src={images[2]}w='100%' h='auto' objectFit='cover'/>
-                    </Flex>
-                    <Flex as='div' justify='center' align='center' sx={itemStyles}>
-                        <Image src={images[3]} w='100%' h='auto' objectFit='cover'/>
-                    </Flex>
+                <Flex as={motion.div} animation={firstSlideAnimation} w='400%'   position='relative'>
+                    {images.map((image: any) => {
+                        return(
+                            <Flex key={String(image)} as='div' justify='center' align='center' sx={itemStyles}>
+                            <Image src={images[0]} w='100%' h='auto' objectFit='cover'/>
+                        </Flex>
+                        )
+                    })}
+                    {images.map((image: any) => {
+                        return(
+                            <Flex key={String(image)} as='div' justify='center' align='center' sx={itemStyles}>
+                            <Image src={images[0]} w='100%' h='auto' objectFit='cover'/>
+                        </Flex>
+                        )
+                    })}
                 </Flex>
             </Flex>
     )
