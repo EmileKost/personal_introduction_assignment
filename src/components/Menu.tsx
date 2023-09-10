@@ -21,7 +21,7 @@ export const Menu = (props: any) => {
             zIndex={'2'}
         >
             <ListItem>
-                <Link  _hover={{opacity: '.5', transition: '.5s', textDecoration: 'none'}} href='/'>Hobbies</Link>
+                <Link  _hover={{opacity: '.5', transition: '.5s', textDecoration: 'none'}} href='/'>Who am I?</Link>
             </ListItem>
             <ListItem>
                 <Link  _hover={{opacity: '.5', transition: '.5s', textDecoration: 'none'}} href='/hobbies'>Hobbies</Link>
