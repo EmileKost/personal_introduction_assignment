@@ -45,7 +45,7 @@ const Hobbies = () => {
 
     return(
         <Flex direction='column' py='60px' px='40px' height='100vh' position='relative' justify='center'>
-            <Heading as='h1' fontSize={{base: '30px', md: '55px'}} px='20px' py='10px' bg={styles.colorBlue} color={styles.colorWhite}  position='absolute' top='0px' left='0px'>
+            <Heading as='h1' fontSize={{base: '30px', md: '55px'}} px='20px' py='10px' bg={styles.colorBlue} color={styles.colorWhite} zIndex={'2'}  position='absolute' top='0px' left='0px'>
                 WHAT I LIKE TO DO
             </Heading>
             <Menu color={styles.colorBlue}/>
