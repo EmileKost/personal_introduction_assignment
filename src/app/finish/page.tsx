@@ -38,9 +38,7 @@ const Finish = () => {
                 animation={insightAnimation}
                 opacity={'0'}
                 >
-                <Text as={motion.span} display='block'>THANK YOU</Text>
-                <Text as={motion.span} display='block'>FOR</Text>
-                <Text as={motion.span} display='block'>LISTENING.</Text>
+                <Text as={motion.span} display='block'>THANKS!</Text>
             </Heading>
         </Flex>
     )
